@@ -31,11 +31,22 @@ PoW 也是现在绝大部分区块链系统的基础机制。在 PoW 模式下�
 
 ## 总统选举例子
 
-为了便于读者理解，我们以美国总统大选为例。
+为了便于读者理解，我们以美国总统大选为例。（以下事例纯属虚构）
 
+这里是2016年美国大选，每个公民仅有一票，只能选择投给特朗普和希拉里其中一人，假定投票有如下规则：
 
+* 投票对象与最后当选总统人相符，投票者会获得美元奖励。
+* 投票持续10天，投票人在结束前都可以更改自己的选票。
+* 你每天可以询问身边的20个公民的投票意向，并且假定他们的回答是诚实的。
+* 所有公民都是驱利的，即会选择回报期望值最高的策略。
 
+根据以上规则，我们思考一下。如果你作为公民，准备投票给希拉里，但是第一天询问了身边20个人后发现18个人都是投票给特朗普的，为了获得最后的美元奖励，你会更改投票对象为特朗普吗？如果每个居民都如此考虑，那么会不会在几天之后快速出现所有人都选择特朗普的情况呢？
 
+在这个模型下，假设第一天所有人，有51%选择特朗普，49%选择希拉里，经过足够的天数迭代之后，所有的人都会因为利益而导向特朗普，这便是迭代收敛。
+
+以太坊基金会的成员们，已经通过程序的方式在验证这个模型在各种情况下的可靠性。
+
+当然这个例子只是一个简化的模型，真实的 Casper PoS 模型需要考虑各种安全性、可用性和性能问题。
 
 ## 参考
 
@@ -43,5 +54,6 @@ PoW 也是现在绝大部分区块链系统的基础机制。在 PoW 模式下�
 \[2\] The Ethereum Killer is Ethereum 2.0: Vitalik Buterin's Roadmap: [https://bitcoinmagazine.com/articles/ethereum-killer-ethereum-20-vitalik-buterins-roadmap/](https://bitcoinmagazine.com/articles/ethereum-killer-ethereum-20-vitalik-buterins-roadmap/)  
 \[3\] Ethereum.org 2.0 Mauve Paper: [https://docs.google.com/document/d/1maFT3cpHvwn29gLvtY4WcQiI6kRbN\_nbCf3JlgR3m\_8](https://docs.google.com/document/d/1maFT3cpHvwn29gLvtY4WcQiI6kRbN_nbCf3JlgR3m_8)  
 \[4\] Youtube DevCon3: [https://www.youtube.com/watch?v=Yo9o5nDTAAQ](https://www.youtube.com/watch?v=Yo9o5nDTAAQ)  
-\[5\] 比特币“挖矿”耗电惊人：[http://www.jfdaily.com/news/detail?id=72346](http://www.jfdaily.com/news/detail?id=72346)
+\[5\] 比特币“挖矿”耗电惊人：[http://www.jfdaily.com/news/detail?id=72346](http://www.jfdaily.com/news/detail?id=72346)  
+\[6\] cbc-casper: [https://github.com/ethereum/cbc-casper](https://github.com/ethereum/cbc-casper)
 
