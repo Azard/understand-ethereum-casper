@@ -48,6 +48,8 @@ PoW 也是现在绝大部分区块链系统的基础机制。在 PoW 模式下�
 
 当然这个例子只是一个简化的模型，真实的 Casper PoS 模型需要考虑各种安全性、可用性和性能问题。
 
+本系列文章接下来会从数据结构、投注、奖励、收回、惩罚等具体流程介绍 Casper 共识算法。
+
 ## 参考
 
 \[1\] Casper 项目地址：[https://github.com/ethereum/casper](https://github.com/ethereum/casper)  
